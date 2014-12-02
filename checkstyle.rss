@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>lattices - Checkstyle report</title>
+    <link>https://github.com/kbertet/java-lattices/</link>
+    <description>lattices - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2014 Karell Bertet</copyright>
+    <item>
+      <title>File: 68,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://github.com/kbertet/java-lattices//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://github.com/kbertet/java-lattices//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.NodeTest.java">fr/kbertet/dgraph/NodeTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ConceptLatticeTest.java">fr/kbertet/lattice/ConceptLatticeTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ArrowRelationWriterFactory.java">fr/kbertet/lattice/io/ArrowRelationWriterFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.util.package-info.java">fr/kbertet/util/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.package-info.java">fr/kbertet/lattice/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ImplicationalSystemWriter.java">fr/kbertet/lattice/io/ImplicationalSystemWriter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.FIMI.java">fr/kbertet/context/io/FIMI.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ArrowRelationWriter.java">fr/kbertet/lattice/io/ArrowRelationWriter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.io.DGraphWriterFactory.java">fr/kbertet/dgraph/io/DGraphWriterFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ImplicationalSystem.java">fr/kbertet/lattice/ImplicationalSystem.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.DGraph.java">fr/kbertet/dgraph/DGraph.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.io.Factory.java">fr/kbertet/io/Factory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ArrowRelationTest.java">fr/kbertet/lattice/ArrowRelationTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.RuleTest.java">fr/kbertet/lattice/RuleTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.package-info.java">fr/kbertet/context/io/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ClosureSystem.java">fr/kbertet/lattice/ClosureSystem.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ImplicationalSystemReaderFactory.java">fr/kbertet/lattice/io/ImplicationalSystemReaderFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ConceptLatticeWriterFactory.java">fr/kbertet/lattice/io/ConceptLatticeWriterFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.package-info.java">fr/kbertet/dgraph/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.FIMITest.java">fr/kbertet/context/io/FIMITest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.io.Serializer.java">fr/kbertet/io/Serializer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.io.Reader.java">fr/kbertet/io/Reader.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.util.Couple.java">fr/kbertet/util/Couple.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.Burmeister.java">fr/kbertet/context/io/Burmeister.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ImplicationalSystemTest.java">fr/kbertet/lattice/ImplicationalSystemTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.DAGraphTest.java">fr/kbertet/dgraph/DAGraphTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.Edge.java">fr/kbertet/dgraph/Edge.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.EdgeTest.java">fr/kbertet/dgraph/EdgeTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ConceptLattice.java">fr/kbertet/lattice/ConceptLattice.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.DGraphTest.java">fr/kbertet/dgraph/DGraphTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.DAGraph.java">fr/kbertet/dgraph/DAGraph.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.CsvTest.java">fr/kbertet/context/io/CsvTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.LatticeFactory.java">fr/kbertet/lattice/LatticeFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ConceptTest.java">fr/kbertet/lattice/ConceptTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.Factory.java">fr/kbertet/context/io/Factory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.util.CoupleTest.java">fr/kbertet/util/CoupleTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.Concept.java">fr/kbertet/lattice/Concept.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.package-info.java">fr/kbertet/lattice/io/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.io.DGraphWriterDot.java">fr/kbertet/dgraph/io/DGraphWriterDot.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.package-info.java">fr/kbertet/context/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.Context.java">fr/kbertet/context/Context.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ImplicationalSystemReader.java">fr/kbertet/lattice/io/ImplicationalSystemReader.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ImplicationalSystemWriterText.java">fr/kbertet/lattice/io/ImplicationalSystemWriterText.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.ContextTest.java">fr/kbertet/context/ContextTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.io.Writer.java">fr/kbertet/io/Writer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ConceptLatticeWriter.java">fr/kbertet/lattice/io/ConceptLatticeWriter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.BurmeisterTest.java">fr/kbertet/context/io/BurmeisterTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ImplicationalSystemWriterFactory.java">fr/kbertet/lattice/io/ImplicationalSystemWriterFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.LatticeFactoryTest.java">fr/kbertet/lattice/LatticeFactoryTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.io.package-info.java">fr/kbertet/dgraph/io/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.Node.java">fr/kbertet/dgraph/Node.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.LatticeTest.java">fr/kbertet/lattice/LatticeTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.Text.java">fr/kbertet/context/io/Text.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.context.io.Csv.java">fr/kbertet/context/io/Csv.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.Rule.java">fr/kbertet/lattice/Rule.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ImplicationalSystemReaderText.java">fr/kbertet/lattice/io/ImplicationalSystemReaderText.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.io.package-info.java">fr/kbertet/io/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.util.ComparableSetTest.java">fr/kbertet/util/ComparableSetTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.BijectiveComponents.java">fr/kbertet/lattice/BijectiveComponents.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ClosureSystemTest.java">fr/kbertet/lattice/ClosureSystemTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.BijectiveComponentsTest.java">fr/kbertet/lattice/BijectiveComponentsTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.util.ComparableSet.java">fr/kbertet/util/ComparableSet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ConceptLatticeWriterDot.java">fr/kbertet/lattice/io/ConceptLatticeWriterDot.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.io.DGraphWriter.java">fr/kbertet/dgraph/io/DGraphWriter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.io.ArrowRelationWriterTeX.java">fr/kbertet/lattice/io/ArrowRelationWriterTeX.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.Lattice.java">fr/kbertet/lattice/Lattice.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.dgraph.io.DGraphWriterFactoryTest.java">fr/kbertet/dgraph/io/DGraphWriterFactoryTest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/kbertet/java-lattices//checkstyle.html#fr.kbertet.lattice.ArrowRelation.java">fr/kbertet/lattice/ArrowRelation.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

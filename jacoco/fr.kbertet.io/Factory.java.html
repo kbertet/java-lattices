@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Factory.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lattices</a> &gt; <a href="index.source.html" class="el_package">fr.kbertet.io</a> &gt; <span class="el_source">Factory.java</span></div><h1>Factory.java</h1><pre class="source lang-java linenums">package fr.kbertet.io;
+
+/*
+ * Factory.java
+ *
+ * Copyright: 2010-2014 Karell Bertet, France
+ *
+ * License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html CeCILL-B license
+ *
+ * This file is part of java-lattices, free package. You can redistribute it and/or modify
+ * it under the terms of CeCILL-B license.
+ */
+
+import java.util.HashMap;
+
+/**
+ * This class defines a standard way for getting reader and writer.
+ *
+ * @param  &lt;E&gt;  Element to be saved and parsed
+ *
+ * ![Factory](Factory.png)
+ *
+ * @uml Factory.png
+ * !include resources/fr/kbertet/io/Factory.iuml
+ * !include resources/fr/kbertet/io/Reader.iuml
+ * !include resources/fr/kbertet/io/Writer.iuml
+ *
+ * hide members
+ * show Factory members
+ * class Factory #LightCyan
+ * title Factory UML graph
+ */
+<span class="fc" id="L33">public abstract class Factory&lt;E&gt; {</span>
+    /**
+     * Map of extension/reader.
+     */
+<span class="fc" id="L37">    private HashMap&lt;String, Reader&lt;E&gt;&gt; readers = new HashMap&lt;String, Reader&lt;E&gt;&gt;();</span>
+
+    /**
+     * Map of extension/writer.
+     */
+<span class="fc" id="L42">    private HashMap&lt;String, Writer&lt;E&gt;&gt; writers = new HashMap&lt;String, Writer&lt;E&gt;&gt;();</span>
+
+    /**
+     * Register a reader with an extension.
+     *
+     * @param   reader     The reader to register
+     * @param   extension  The extension linked to the reader
+     *
+     * @return  The old reader or null
+     */
+    public Reader&lt;E&gt; registerReader(Reader&lt;E&gt; reader, String extension) {
+<span class="fc" id="L53">        Reader&lt;E&gt; old = readers.get(extension);</span>
+<span class="fc" id="L54">        readers.put(extension, reader);</span>
+<span class="fc" id="L55">        return old;</span>
+    }
+
+    /**
+     * Register a writer with an extension.
+     *
+     * @param   writer     The writer to register
+     * @param   extension  The extension linked to the writer
+     *
+     * @return  The old reader or null
+     */
+    public Writer&lt;E&gt; registerWriter(Writer&lt;E&gt; writer, String extension) {
+<span class="fc" id="L67">        Writer&lt;E&gt; old = writers.get(extension);</span>
+<span class="fc" id="L68">        writers.put(extension, writer);</span>
+<span class="fc" id="L69">        return old;</span>
+    }
+
+    /**
+     * Unregister a reader extension.
+     *
+     * @param   extension  The extension linked to a reader
+     *
+     * @return  The old reader or null
+     */
+    public Reader&lt;E&gt; unregisterReader(String extension) {
+<span class="nc" id="L80">        Reader&lt;E&gt; old = readers.get(extension);</span>
+<span class="nc" id="L81">        readers.remove(extension);</span>
+<span class="nc" id="L82">        return old;</span>
+    }
+
+    /**
+     * Unregister a writer extension.
+     *
+     * @param   extension  The extension linked to a writer
+     *
+     * @return  The old writer or null
+     */
+    public Writer&lt;E&gt; unregisterWriter(String extension) {
+<span class="nc" id="L93">        Writer&lt;E&gt; old = writers.get(extension);</span>
+<span class="nc" id="L94">        writers.remove(extension);</span>
+<span class="nc" id="L95">        return old;</span>
+    }
+
+    /**
+     * Get the reader linked to an extension.
+     *
+     * @param   extension  The extension linked to a reader
+     *
+     * @return  The reader or null
+     */
+    public Reader&lt;E&gt; getReader(String extension) {
+<span class="fc" id="L106">        return readers.get(extension);</span>
+    }
+
+    /**
+     * Get the writer linked to an extension.
+     *
+     * @param   extension  The extension linked to a writer
+     *
+     * @return  The writer or null
+     */
+    public Writer&lt;E&gt; getWriter(String extension) {
+<span class="fc" id="L117">        return writers.get(extension);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.2.201409121644</span></div></body></html>

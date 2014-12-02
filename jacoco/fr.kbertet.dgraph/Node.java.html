@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Node.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lattices</a> &gt; <a href="index.source.html" class="el_package">fr.kbertet.dgraph</a> &gt; <span class="el_source">Node.java</span></div><h1>Node.java</h1><pre class="source lang-java linenums">/*
+ * Node.java
+ *
+ * Copyright: 2010-2014 Karell Bertet, France
+ *
+ * License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html CeCILL-B license
+ *
+ * This file is part of java-lattices, free package. You can redistribute it and/or modify
+ * it under the terms of CeCILL-B license.
+ */
+
+package fr.kbertet.dgraph;
+
+/**
+ * This class gives a standard representation for a node of a graph.
+ *
+ * A node is composed of a `content` and an
+ * automatically computed and unique index.
+ *
+ * This class implements the `Comparable` interface aiming at
+ * sorting nodes by providing the {@link #compareTo} method
+ * that compares the node with those in parameter by comparing their indexes.
+ *
+ * Since nodes are comparable, they can be stored in a sorted collection,
+ * and in particular in a sorted set where set operations are provided.
+ *
+ * ![Node](Node.png)
+ *
+ * @uml Node.png
+ * !include resources/fr/kbertet/dgraph/Node.iuml
+ *
+ * hide members
+ * show Node members
+ * class Node #LightCyan
+ * title Node UML graph
+ */
+public class Node implements Comparable&lt;Object&gt;, Cloneable {
+    /* ------------- FIELDS --------------------- */
+
+    /**
+     * An uniquely defined identifier for this node.
+     */
+   private int identifier;
+
+    /**
+     * An object to store information about the element.
+     */
+   private Object content;
+
+    /**
+     * The total number of nodes.
+     *
+     * Initialised to 0, it is incremented by the constructor,
+     * and used to inialize the identifier.
+     */
+<span class="fc" id="L56">   private static int count = 0;</span>
+
+    /* ------------- CONSTRUCTORS ------------------ */
+
+    /**
+     * Constructs a new node containing the specified content.
+     *
+     * Identifier of this node is initalized with the `count`
+     * variable which is the incremented.
+     *
+     * @param   content  Content for this node
+     */
+<span class="fc" id="L68">    public Node(final Object content) {</span>
+<span class="fc" id="L69">        this.identifier = ++count;</span>
+<span class="fc" id="L70">        this.content = content;</span>
+<span class="fc" id="L71">    }</span>
+
+    /**
+     * Constructs a new node with a null content.
+     *
+     * Identifier of this node is initalized with the `count`
+     * variable which is the incremented.
+     */
+    public Node() {
+<span class="fc" id="L80">        this(null);</span>
+<span class="fc" id="L81">    }</span>
+
+    /* -------------- ACCESSORS ------------------- */
+
+    /**
+     * Get the identifier.
+     *
+     * @return  the node identifier
+     */
+    public int getIdentifier() {
+<span class="fc" id="L91">        return this.identifier;</span>
+    }
+
+    /**
+     * Get the content.
+     *
+     * @return  the node content
+     */
+    public Object getContent() {
+<span class="fc" id="L100">        return this.content;</span>
+    }
+
+    /**
+     * Set the content.
+     *
+     * @param   content  Content for this node
+     *
+     * @return  this for chaining
+     */
+    public Node setContent(final Object content) {
+<span class="fc" id="L111">        this.content = content;</span>
+<span class="fc" id="L112">        return this;</span>
+    }
+
+    /* --------------- SAVING METHOD ------------ */
+
+    /**
+     * Returns a string representation of this node without spaces.
+     *
+     * @return  the string representation
+     */
+     public String toString() {
+<span class="pc bpc" id="L123" title="1 of 2 branches missed.">        if (this.content == null) {</span>
+<span class="nc" id="L124">            return this.identifier + &quot;&quot;;</span>
+        } else {
+<span class="fc" id="L126">            return this.content.toString();</span>
+        }
+    }
+
+    /* --------------- OVERLAPPING METHODS ------------ */
+
+    /**
+     * Returns a clone of this node.
+     *
+     * @return  a clone of this node
+     */
+    public Node clone() {
+<span class="fc" id="L138">        return new Node(this.content);</span>
+    }
+
+    /**
+     * Compares this node with the specified one.
+     *
+     * @param  object  The object to be tested with
+     *
+     * @return  true or false as this node is equal to the specified object.
+     */
+    public boolean equals(final Object object) {
+<span class="fc bfc" id="L149" title="All 2 branches covered.">        return this.compareTo(object) == 0;</span>
+    }
+
+    /**
+     * Compute the hash code.
+     *
+     * @return  an integer representing the object
+     */
+    public int hashCode() {
+<span class="fc" id="L158">        return this.identifier;</span>
+    }
+
+   /**
+    * Compares this node with those in parameter, based on their identifiers.
+    *
+    * The result is zero if the identifiers are equal; positive if this node's identifier is greater, and negative otherwise.
+    * This comparison method is needed to define a natural ordering.
+    * It allows to use objects of this class in a sorted collection.
+    *
+    * @param   object  the specified element to be compared with this node
+    *
+    * @return  a negative integer, zero, or a positive integer as this node is less than, equal to, or greater than the specified object.
+    */
+    public int compareTo(final Object object) {
+<span class="fc bfc" id="L173" title="All 2 branches covered.">        if (object instanceof Node) {</span>
+<span class="fc" id="L174">            return this.identifier - ((Node) object).identifier;</span>
+        } else {
+<span class="fc" id="L176">            return -1;</span>
+        }
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.2.201409121644</span></div></body></html>

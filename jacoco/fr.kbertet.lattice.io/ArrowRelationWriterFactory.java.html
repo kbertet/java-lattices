@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ArrowRelationWriterFactory.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lattices</a> &gt; <a href="index.source.html" class="el_package">fr.kbertet.lattice.io</a> &gt; <span class="el_source">ArrowRelationWriterFactory.java</span></div><h1>ArrowRelationWriterFactory.java</h1><pre class="source lang-java linenums">package fr.kbertet.lattice.io;
+
+/*
+ * ArrowRelationWriterFactory.java
+ *
+ * Copyright: 2010-2014 Karell Bertet, France
+ *
+ * License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html CeCILL-B license
+ *
+ * This file is part of java-lattices, free package. You can redistribute it and/or modify
+ * it under the terms of CeCILL-B license.
+ */
+
+import java.util.HashMap;
+
+/**
+ * This class register writers for the ArrowRelation class.
+ *
+ * ![ArrowRelationWriterFactory](ArrowRelationWriterFactory.png)
+ *
+ * @uml ArrowRelationWriterFactory.png
+ * !include resources/fr/kbertet/lattice/io/ArrowRelationWriterFactory.iuml
+ * !include resources/fr/kbertet/lattice/io/ArrowRelationWriter.iuml
+ *
+ * hide members
+ * show ArrowRelationWriterFactory members
+ * class ArrowRelationWriterFactory #LightCyan
+ * title ArrowRelationWriterFactory UML graph
+ */
+public final class ArrowRelationWriterFactory {
+    /**
+     * This class is not designed to be instantiated.
+     */
+<span class="nc" id="L34">    private ArrowRelationWriterFactory() {</span>
+<span class="nc" id="L35">    }</span>
+
+    /**
+     * Map of extension/writer.
+     */
+<span class="fc" id="L40">    private static HashMap&lt;String, ArrowRelationWriter&gt; writers = new HashMap&lt;String, ArrowRelationWriter&gt;();</span>
+
+    /**
+     * Register a writer with an extension.
+     *
+     * @param   writer     The writer to register
+     * @param   extension  The extension linked to the writer
+     *
+     * @return  The old writer or null
+     */
+    public static ArrowRelationWriter register(ArrowRelationWriter writer, String extension) {
+<span class="fc" id="L51">        ArrowRelationWriter old = writers.get(extension);</span>
+<span class="fc" id="L52">        writers.put(extension, writer);</span>
+<span class="fc" id="L53">        return old;</span>
+    }
+
+    /**
+     * Unregister an extension.
+     *
+     * @param   extension  The extension linked to a writer
+     *
+     * @return  The old writer or null
+     */
+    public static ArrowRelationWriter unregister(String extension) {
+<span class="nc" id="L64">        ArrowRelationWriter old = writers.get(extension);</span>
+<span class="nc" id="L65">        writers.remove(extension);</span>
+<span class="nc" id="L66">        return old;</span>
+    }
+
+    /**
+     * Get the writer linked to an extension.
+     *
+     * @param   extension  The extension linked to a writer
+     *
+     * @return  The writer or null
+     */
+    public static ArrowRelationWriter get(String extension) {
+<span class="fc" id="L77">        return writers.get(extension);</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.2.201409121644</span></div></body></html>

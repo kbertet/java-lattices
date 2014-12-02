@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Edge.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lattices</a> &gt; <a href="index.source.html" class="el_package">fr.kbertet.dgraph</a> &gt; <span class="el_source">Edge.java</span></div><h1>Edge.java</h1><pre class="source lang-java linenums">package fr.kbertet.dgraph;
+
+/*
+ * Edge.java
+ *
+ * Copyright: 2010-2014 Karell Bertet, France
+ *
+ * License: http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html CeCILL-B license
+ *
+ * This file is part of java-lattices, free package. You can redistribute it and/or modify
+ * it under the terms of CeCILL-B license.
+ */
+
+/**
+ * This class gives a standard representation for an edge of a graph.
+ *
+ * An edge is composed of a content, and two nodes
+ *
+ * - `from`
+ * - `to`
+ *
+ * of class {@link Node}.
+ *
+ * This class implements class `Comparable` and provides
+ * the {@link #compareTo} method that compares the edge with
+ * those in parameter by sorting indexes of the nodes that compose it.
+ *
+ * Therefore, edges can be stored in a sorted collection since they are
+ * comparable, and in particular in a sorted set where
+ * set operations are provided.
+ *
+ * ![Edge](Edge.png)
+ *
+ * @uml Edge.png
+ * !include resources/fr/kbertet/dgraph/Edge.iuml
+ * !include resources/fr/kbertet/dgraph/Node.iuml
+ *
+ * hide members
+ * show Edge members
+ * class Edge #LightCyan
+ * title Edge UML graph
+ */
+public class Edge implements Comparable&lt;Object&gt; {
+    /* ------------- FIELDS --------------------- */
+
+    /**
+     * The origin node of the edge.
+     */
+    private final Node from;
+
+    /**
+     * The destination node of the edge.
+     */
+    private final Node to;
+
+    /**
+     * An object to store information about this edge.
+     */
+    private Object content;
+
+    /* ------------- CONSTRUCTORS ---------------- */
+
+    /**
+     * Constructs a new edge with the specified node as origin and destination node, with the specified content.
+     *
+     * @param   from     the origin node
+     * @param   to       the destination node
+     * @param   content  the edge content
+     */
+<span class="fc" id="L70">    public Edge(final Node from, final Node to, final Object content) {</span>
+<span class="fc" id="L71">        this.from = from;</span>
+<span class="fc" id="L72">        this.to = to;</span>
+<span class="fc" id="L73">        this.content = content;</span>
+<span class="fc" id="L74">    }</span>
+
+    /**
+     * Constructs a new edge with the specified node as origin and destination node, and a null value as content.
+     *
+     * @param   from     the origin node
+     * @param   to       the destination node
+     */
+    public Edge(final Node from, final Node to) {
+<span class="fc" id="L83">        this(from, to, null);</span>
+<span class="fc" id="L84">    }</span>
+
+    /* -------------- ACCESSORS ------------------- */
+
+    /**
+     * Returns the origin node of this edge.
+     *
+     * @return  the origin node
+     */
+    public Node getFrom() {
+<span class="fc" id="L94">        return this.from;</span>
+    }
+
+    /**
+     * Returns the destination node of this edge.
+     *
+     * @return  the destination node
+     */
+    public Node getTo() {
+<span class="fc" id="L103">        return this.to;</span>
+    }
+
+    /**
+     * Replaces the content of this edge with the specified one.
+     *
+     * @param   content  The edge content
+     *
+     * @return  this for chaining
+     */
+    public Edge setContent(final Object content) {
+<span class="fc" id="L114">        this.content = content;</span>
+<span class="fc" id="L115">        return this;</span>
+    }
+
+    /**
+     * Returns the content this edge.
+     *
+     * @return  the content
+     */
+    public Object getContent() {
+<span class="fc" id="L124">        return this.content;</span>
+    }
+
+    /**
+     * Returns true if content of this edge is not the null value.
+     *
+     * @return  true if the content is not null
+     */
+    public boolean hasContent() {
+<span class="fc bfc" id="L133" title="All 2 branches covered.">        return this.content != null;</span>
+    }
+
+    /* ------------- METHODS ------------------ */
+
+    /**
+     * Compares this edge with the specified one.
+     *
+     * @param  object  The object to be tested with
+     *
+     * @return  true or false as this node is equal to the specified object.
+     */
+    public boolean equals(final Object object) {
+<span class="fc bfc" id="L146" title="All 2 branches covered.">        return this.compareTo(object) == 0;</span>
+    }
+
+    /**
+     * Compute the hash code.
+     *
+     * @return  an integer representing the object
+     */
+    public int hashCode() {
+<span class="nc" id="L155">        return 1013 * (from.hashCode()) ^ 1009 * (to.hashCode());</span>
+    }
+
+    /**
+     * Compares this edge with those in parameter, based on their identifiers.
+     *
+     * The result is zero if the identifiers are equal; positive if this edge's identifier is greater,
+     * and negative otherwise.
+     *
+     * This comparison method is needed to define a natural ordering.
+     * It allows to use objects of this class in a sorted collection
+     *
+     * @param   object  the specified element to be compared with this edge
+     *
+     * @return  a negative integer, zero, or a positive integer as this edge is less than, equal to, or greater than the specified object.
+     */
+    public int compareTo(final Object object)  {
+<span class="fc bfc" id="L172" title="All 2 branches covered.">        if (object instanceof Edge) {</span>
+<span class="fc" id="L173">            Edge edge = (Edge) object;</span>
+<span class="fc" id="L174">            int cmp = this.from.compareTo(edge.from);</span>
+<span class="fc bfc" id="L175" title="All 2 branches covered.">            if (cmp == 0) {</span>
+<span class="fc" id="L176">                return this.to.compareTo(edge.to);</span>
+            } else {
+<span class="fc" id="L178">                return cmp;</span>
+            }
+        } else {
+<span class="fc" id="L181">            return -1;</span>
+        }
+    }
+
+    /**
+     * Returns a String representation of this edge.
+     *
+     * @return  The string representation of this edge
+     */
+    public String toString() {
+<span class="fc" id="L191">        String string = this.from + &quot;-&gt;&quot; + this.to;</span>
+<span class="fc bfc" id="L192" title="All 2 branches covered.">        if (this.hasContent()) {</span>
+<span class="fc" id="L193">            string += &quot;(&quot; + this.content + &quot;)&quot;;</span>
+        }
+<span class="fc" id="L195">        return string;</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.2.201409121644</span></div></body></html>
